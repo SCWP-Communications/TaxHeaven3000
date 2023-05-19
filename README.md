@@ -21,4 +21,4 @@ and add it to the game folder of your Ren'Py folder.
 
 This version of the source code is editable and can be used to make modifications to the source.
 
-If you are MSCHF abd you want this taken down, please contact me at foolunderscore@netzero.net.
+If you are MSCHF and you want this taken down, please contact me at foolunderscore@netzero.net.
