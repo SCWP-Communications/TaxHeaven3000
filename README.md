@@ -2,7 +2,7 @@
 ---Tax Heaven 3000 Source---
 ----------------------------
 
-Decompiled by Skylar Clark (skylarclark.neocities.org)
+Decompiled by Skylar Clark (skylarclark.xyz)
 ______________________________________________________
 
 Before you import Tax Heaven 3000 to Ren'Py, you need some files that are not with this.
@@ -21,4 +21,4 @@ and add it to the game folder of your Ren'Py folder.
 
 This version of the source code is editable and can be used to make modifications to the source.
 
-If you are MSCHF and you want this taken down, please contact me at scwp@netzero.net.
+If you are MSCHF and you want this taken down, please contact me at contact@skylarclark.xyz.
