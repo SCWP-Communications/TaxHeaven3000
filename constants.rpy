@@ -1,7 +1,7 @@
 init python:
     import copy
     global extra_w2_diary_pages, dollar_active_field_limits, DEFAULT_FILE_ERROR_MESSAGE, FILE_IS_ENCRYPTED_ERROR_MESSAGE, personal_diary_pages, CAFE_REQUIRED_FIELDS, object_class_name_mappings, REQUIRED_FIELDS,  DEFAULT_1099_INT_DIARY_PAGE, ADDRESS_VALUES, WHAT_CHOICE, INCOME_TYPE_CHOICES, INT_1099_CHOICE, OTHER_FORMS_CHOICE, FILING_SINGLY_CHOICE, MARRIED_FILING_JOINTLY_CHOICE, SURVIVING_SPOUSE_CHOICE, HOH_CHOICE, NAME_VALUES, TWO_YEARS_PRIOR, START_NEW_GAME_MESSAGE, DUMMY_LAST_NAME, STANDARD_CHOICES, us_states, TAX_YEAR, PREVIOUS_TAX_YEAR, NEXT_TAX_YEAR, W2_FORM_CHOICES, YES_OR_NO_CHOICES, NUMBER_OF_PAGE_FLIP_SOUNDS, ATTENDANCE_STATUS_CHOICES, FULL_TIME_CHOICE, HALF_TIME_CHOICE, LESS_THAN_HALF_CHOICE, ELIGIBILITY_CHOICES, REFUND_CHOICES, ALL_CHOICE, SOME_CHOICE, BANK_ACCOUNT_TYPE_CHOICES, CHECKING_CHOICE, SAVINGS_CHOICE, DEPENDENT_CLAIMER_VALUES, VALUE_DISPLAY_NAMES, SCHOOL_1_ADDRESS_VALUES, SCHOOL_0_ADDRESS_VALUES, MAX_IRA_CONTRIBUTION_UNDER_50, MAX_IRA_CONTRIBUTION_50_OR_OVER, DEFAULT_W2_DIARY_PAGE, STATIC_INCOME_DIARY_PAGES_0, DEFAULT_1099_INT_DIARY_PAGE, SUMMARY_PAGES_1099_INT, DEFAULT_1099_G_DIARY_PAGE, SUMMARY_PAGES_1099_G, STATIC_INCOME_DIARY_PAGES_1, diary_field_section_page_mapping, FILING_STATUS_CHOICES, diary_sections, banking_diary_pages, refund_pages, educator_expenses_pages, excess_social_security_pages, earned_income_credit_pages, edu_final_pages, edu_school_pages, aoc_refundable_pages, aoc_screener_pages, edu_eligibility_pages, diary_pages_1099_g, ssa_1099_pages, diary_pages_1099_int, diary_pages_w2, DEFAULT_DIARY_SECTIONS, BOX_12_CHOICES, BOX_12_RED_CHOICE, BOX_12_YELLOW_CHOICE, BOX_12_GREEN_CHOICE, BOOKS_TO_CHOOSE_FROM
-    TAX_YEAR = "2022"
+    TAX_YEAR = "2024"
     PREVIOUS_TAX_YEAR = str(int(TAX_YEAR) - 1)
     TWO_YEARS_PRIOR = str(int(TAX_YEAR) - 2)
     NEXT_TAX_YEAR = str(int(TAX_YEAR) + 1)
@@ -438,7 +438,7 @@ init python:
                 "display": "ADDITIONAL INCOME INFORMATION",
                 "fields": [
                     {
-                        "display": "In 2022, was {}'s earned income at least half of their support?",
+                        "display": "In 2024, was {}'s earned income at least half of their support?",
                         "value_name": "interest_income_earned_income_half_of_support",
                         "type": "checkbox",
                         "prefix": None,
@@ -463,7 +463,7 @@ init python:
                 "display": "ADDITIONAL INCOME INFORMATION",
                 "fields": [
                     {
-                        "display": "Was {} a full time student in 2022, for at least one academic term?",
+                        "display": "Was {} a full time student in 2024, for at least one academic term?",
                         "value_name": "was_full_time_student_one_term",
                         "type": "checkbox",
                         "prefix": None,
@@ -471,7 +471,7 @@ init python:
                         "changed_function": None
                     },
                     {
-                        "display": "In 2022, was {}'s earned income at least half of their support?",
+                        "display": "In 2024, was {}'s earned income at least half of their support?",
                         "value_name": "interest_income_earned_income_half_of_support",
                         "type": "checkbox",
                         "prefix": None,
@@ -496,7 +496,7 @@ init python:
                     "display": "1099-INT INCOME SUMMARY",
                     "fields": [
                         {
-                            "display": "2022 total taxable interest income",
+                            "display": "2024 total taxable interest income",
                             "value_name": "form_1040_line_2b",
                             "type": "static",
                             "prefix": "$",
@@ -504,7 +504,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "2022 total tax exempt interest income",
+                            "display": "2024 total tax exempt interest income",
                             "value_name": "form_1040_line_2a",
                             "type": "static",
                             "prefix": "$",
@@ -593,7 +593,7 @@ init python:
                     "display": "W-2 INCOME SUMMARY",
                     "fields": [
                         {
-                            "display": "2022 total W-2 income",
+                            "display": "2024 total W-2 income",
                             "value_name": "form_1040_line_1a",
                             "type": "static",
                             "prefix": "$",
@@ -617,7 +617,7 @@ init python:
                     "display": "GENERAL 1099-INT INCOME INFO",
                     "fields": [
                         {
-                            "display": "Did {} receive any Form 1099-INTs for 2022?",
+                            "display": "Did {} receive any Form 1099-INTs for 2024?",
                             "value_name": "has_income_interest",
                             "type": "checkbox",
                             "prefix": None,
@@ -643,7 +643,7 @@ init python:
                     "display": "GENERAL SSA-1099 INCOME INFO",
                     "fields": [
                         {
-                            "display": "Did {} receive a Form SSA-1099 for 2022?",
+                            "display": "Did {} receive a Form SSA-1099 for 2024?",
                             "value_name": "has_social_security_benefits",
                             "type": "checkbox",
                             "prefix": None,
@@ -671,7 +671,7 @@ init python:
                 "changed_function": "validate_and_save_dollar_active_field"
             },
             {
-                "display": "Taxable portion of 2022 Social Security benefits",
+                "display": "Taxable portion of 2024 Social Security benefits",
                 "value_name": "form_1040_line_6b",
                 "type": "static",
                 "prefix": "$",
@@ -690,7 +690,7 @@ init python:
                     "display": "GENERAL 1099-G INCOME INFO",
                     "fields": [
                         {
-                            "display": "Did {} receive a 1099-G for 2022?",
+                            "display": "Did {} receive a 1099-G for 2024?",
                             "value_name": "has_unemployment_compensation",
                             "type": "checkbox",
                             "prefix": None,
@@ -716,7 +716,7 @@ init python:
                     "display": "STUDENT STATUS",
                     "fields": [
                         {
-                            "display": "In 2022, was {} a student enrolled at an eligible educational institution?",
+                            "display": "In 2024, was {} a student enrolled at an eligible educational institution?",
                             "value_name": "was_a_student",
                             "type": "checkbox",
                             "prefix": None,
@@ -724,7 +724,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "In 2022, did {} pay tuition or other qualified education expenses for an academic period beginning in 2022, or beginning in the first three months of 2023?",
+                            "display": "In 2024, did {} pay tuition or other qualified education expenses for an academic period beginning in 2024, or beginning in the first three months of 2023?",
                             "value_name": "paid_tuition_or_qualified_expenses",
                             "type": "checkbox",
                             "prefix": None,
@@ -732,7 +732,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "In 2022, was {} pursuing a program leading to a degree or other recognized education credential?",
+                            "display": "In 2024, was {} pursuing a program leading to a degree or other recognized education credential?",
                             "value_name": "aoc_pursued_a_program_leading_to_degree",
                             "type": "checkbox",
                             "prefix": None,
@@ -746,7 +746,7 @@ init python:
                     "display": None,
                     "fields": [
                         {
-                            "display": "For at least one academic period in 2022, what was {}'s enrollment status?",
+                            "display": "For at least one academic period in 2024, what was {}'s enrollment status?",
                             "value_name": "student_status",
                             "type": "checkbox",
                             "options": ATTENDANCE_STATUS_CHOICES_DIARY,
@@ -777,7 +777,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "At the start of 2022, had {} already completed the first four years of their postsecondary education?",
+                            "display": "At the start of 2024, had {} already completed the first four years of their postsecondary education?",
                             "value_name": "aoc_first_four_years_completed_before_this_year",
                             "type": "checkbox",
                             "prefix": None,
@@ -790,7 +790,7 @@ init python:
                     "display": None,
                     "fields": [
                         {
-                            "display": "At the end of 2022, did {} have a felony drug conviction for possessing or distributing a controlled substance?",
+                            "display": "At the end of 2024, did {} have a felony drug conviction for possessing or distributing a controlled substance?",
                             "value_name": "aoc_has_been_convicted",
                             "type": "checkbox",
                             "prefix": None,
@@ -843,7 +843,7 @@ init python:
     }
 
     EARNED_INCOME_FIELD = {
-        "display": "In 2022, was {}'s earned income at least half of their support?",
+        "display": "In 2024, was {}'s earned income at least half of their support?",
         "value_name": "aoc_refundable_earned_income_half_of_support",
         "type": "checkbox",
         "prefix": None,
@@ -852,7 +852,7 @@ init python:
     }
 
     PARENTS_ALIVE_FIELD = {
-        "display": "At the end of 2022, was one or both of {}'s parents alive?",
+        "display": "At the end of 2024, was one or both of {}'s parents alive?",
         "value_name": "aoc_refundable_parents_alive",
         "type": "checkbox",
         "prefix": None,
@@ -907,7 +907,7 @@ init python:
                             "changed_function": "validate_and_save_active_input_required_array_property"
                         },
                         {
-                            "display": "Did {} receive a form 1098-T from this institution in 2022?",
+                            "display": "Did {} receive a form 1098-T from this institution in 2024?",
                             "value_name": f"aoc_schools[{idx}].did_receive_1098t_this_year",
                             "type": "checkbox",
                             "prefix": None,
@@ -1015,7 +1015,7 @@ init python:
                     "display": "QUALIFIED EDUCATION EXPENSES",
                     "fields": [
                         {
-                            "display": "{}’s total qualified education expenses in 2022",
+                            "display": "{}’s total qualified education expenses in 2024",
                             "value_name": "aoc_qualified_educational_expenses",
                             "type": "input",
                             "prefix": "$",
@@ -1043,7 +1043,7 @@ init python:
                     "display": "QUALIFIED EDUCATION EXPENSES",
                     "fields": [
                         {
-                            "display": "{}’s total qualified education expenses in 2022",
+                            "display": "{}’s total qualified education expenses in 2024",
                             "value_name": "aoc_qualified_educational_expenses",
                             "type": "input",
                             "prefix": "$",
@@ -1077,7 +1077,7 @@ init python:
                     "display": "EARNED INCOME TAX CREDIT",
                     "fields": [
                         {
-                            "display": "Was {}'s main home in the United States for 50% or more of 2022?",
+                            "display": "Was {}'s main home in the United States for 50% or more of 2024?",
                             "value_name": "resided_in_us_for_more_than_half_the_year",
                             "type": "checkbox",
                             "prefix": None,
@@ -1085,7 +1085,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "Did {} have any nontaxable combat pay in 2022?",
+                            "display": "Did {} have any nontaxable combat pay in 2024?",
                             "value_name": "had_nontaxable_combat_pay",
                             "type": "checkbox",
                             "prefix": None,
@@ -1114,7 +1114,7 @@ init python:
     earned_income_credit_pages = []
 
     NONTAXABLE_COMBAT_PAY_FIELD = {
-        "display": "Amount of {}'s 2022 nontaxable combat pay",
+        "display": "Amount of {}'s 2024 nontaxable combat pay",
         "value_name": "nontaxable_combat_pay_election",
         "type": "input",
         "prefix": "$",
@@ -1132,7 +1132,7 @@ init python:
                     "display": "EXCESS SOCIAL SECURITY TAX WITHELD",
                     "fields": [
                         {
-                            "display": "{}'s total social security tax paid in 2022",
+                            "display": "{}'s total social security tax paid in 2024",
                             "value_name": "w2_box_4_totals",
                             "type": "static",
                             "prefix": "$",
@@ -1140,7 +1140,7 @@ init python:
                             "changed_function": None
                         },
                         {
-                            "display": "2022 maximum social security tax applicable",
+                            "display": "2024 maximum social security tax applicable",
                             "value_name": "max_social_security_tax_this_year",
                             "type": "static",
                             "prefix": "$",
@@ -1154,7 +1154,7 @@ init python:
                     "display": None,
                     "fields": [
                         {
-                            "display": "{}'s refundable excess social security withheld in 2022",
+                            "display": "{}'s refundable excess social security withheld in 2024",
                             "value_name": "form_schedule3_line_11",
                             "type": "static",
                             "prefix": "$",
@@ -1179,7 +1179,7 @@ init python:
                 "display": "EDUCATOR EXPENSE DEDUCTION",
                 "fields": [
                     {
-                        "display": "{} was a qualified educator at a qualified school, and taught at least 900 hours in the 2022 school year",
+                        "display": "{} was a qualified educator at a qualified school, and taught at least 900 hours in the 2024 school year",
                         "value_name": "has_educator_expenses",
                         "type": "checkbox",
                         "prefix": None,
@@ -1197,7 +1197,7 @@ init python:
         "display": None,
         "fields": [
                 {
-                    "display": "{}’s 2022 qualified educator expenses",
+                    "display": "{}’s 2024 qualified educator expenses",
                     "value_name": "educator_expenses",
                     "type": "input",
                     "prefix": "$",
@@ -1205,7 +1205,7 @@ init python:
                     "changed_function": "validate_and_save_dollar_active_field_less_than_equal_to_limit"
                 },
                 {
-                    "display": "{}’s 2022 educator expense deduction",
+                    "display": "{}’s 2024 educator expense deduction",
                     "value_name": "form_schedule1_line_11",
                     "type": "static",
                     "prefix": "$",
@@ -1229,7 +1229,7 @@ init python:
                 "display": "STUDENT LOAN PAYMENT DEDUCTION",
                 "fields": [
                     {
-                        "display": "{} paid interest on a qualified student loan in 2022?",
+                        "display": "{} paid interest on a qualified student loan in 2024?",
                         "value_name": "has_student_loan_interest",
                         "type": "checkbox",
                         "prefix": None,
@@ -1246,7 +1246,7 @@ init python:
         "display": None,
         "fields": [
                 {
-                    "display": "The total amount of interest {} paid on their student loan(s) in 2022",
+                    "display": "The total amount of interest {} paid on their student loan(s) in 2024",
                     "value_name": "student_loan_interest",
                     "type": "input",
                     "prefix": "$",
@@ -1254,7 +1254,7 @@ init python:
                     "changed_function": "validate_and_save_dollar_active_field_less_than_equal_to_limit"
                 },
                 {
-                    "display": "{}'s 2022 student loan interest deduction",
+                    "display": "{}'s 2024 student loan interest deduction",
                     "value_name": "form_schedule1_line_21",
                     "type": "static",
                     "prefix": "$",
@@ -1278,7 +1278,7 @@ init python:
                     "display": "IRA CONTRIBUTION DEDUCTION",
                     "fields": [
                         {
-                            "display": "{}'s total contribution to their traditional IRA in 2022",
+                            "display": "{}'s total contribution to their traditional IRA in 2024",
                             "value_name": "tax_deferred_ira_contributions",
                             "type": "input",
                             "prefix": "$",
@@ -1300,7 +1300,7 @@ init python:
                     "display": None,
                     "fields": [
                         {
-                            "display": "{}'s 2022 IRA deduction",
+                            "display": "{}'s 2024 IRA deduction",
                             "value_name": "form_schedule1_line_20",
                             "type": "static",
                             "prefix": "$",
@@ -1329,7 +1329,7 @@ init python:
                         "changed_function": None
                     },
                     {
-                        "display": "Estimated tax payments already made in 2022",
+                        "display": "Estimated tax payments already made in 2024",
                         "value_name": "estimated_tax_payments",
                         "type": "input",
                         "prefix": "$",
