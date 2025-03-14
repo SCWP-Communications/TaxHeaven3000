@@ -2,7 +2,7 @@
 default dates = 0
 default refund = 0
 default amount_to_be_refunded = 0
-default tax_day = "April 18th, 2023"
+default tax_day = "April 15th, 2025"
 default current_char = "Narrator"
 default has_dated = 1
 default dates_completed = 1
@@ -27,7 +27,7 @@ default diary_bookmark_index = 0
 default downloaded_return = False
 default past_return_downloading = False
 
-default max_social_security_tax_this_year = 9114
+default max_social_security_tax_this_year = 176100
 default variable_change_callbacks = {}
 default dollar_active_field_limits = {
     'household_empoloyee_wages_not_reported_on_w2': 1900,
